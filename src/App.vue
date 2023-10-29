@@ -3,7 +3,7 @@
     <Header
       @toggle-Form="toggleForm"
       :showForm="showForm"
-      title="Task Tracker"
+      title="Vue Task Tracker"
     />
     <div v-show="showForm">
       <AddTask @add-task="AddTask" />
