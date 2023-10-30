@@ -20,7 +20,6 @@
 import Header from "./components/Header.vue";
 import TaskList from "./components/TaskList.vue";
 import AddTask from "./components/AddTask.vue";
-import axios from "axios";
 
 export default {
   name: "App",
@@ -39,8 +38,8 @@ export default {
     toggleForm() {
       this.showForm = !this.showForm;
     },
-    AddTask() {
-      this.tasks = [...this.tasks, data];
+    AddTask(task) {
+      this.tasks = [...this.tasks, task];
     },
     delTask(id) {
       console.log("task", id);
